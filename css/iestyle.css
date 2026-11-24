@@ -1,0 +1,98 @@
+/* Embarqaudio */
+
+img {
+	border:none;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* HEAD */
+/*-------------------------------------------------------------------------------------------*/
+
+#nav li {
+	margin: 0 0 0 48px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* CONTENT */
+/*-------------------------------------------------------------------------------------------*/
+
+#mainbox {
+	background-image:url(../images/blueBG.png);
+	background-repeat:no-repeat;
+	max-width: 910px;
+	height: 374px;
+	margin: 0 auto;
+	position:relative;
+}
+
+#simbolo {
+	right: -40px;
+	bottom: -59px;
+}
+
+/*----------------------------------------*/
+/* BEGIN SCROLL CONTENT */
+/*----------------------------------------*/
+
+#femail {
+	margin: 10px 0 10px 0;
+}
+
+#fmessage {
+	height: 85px;
+}
+
+#fsubmit {
+	height:25px;
+	padding:5px;
+}
+
+/*----------------------------------------*/
+/* END SCROLL CONTENT */
+/*----------------------------------------*/
+
+#name {
+	background-color: #f89b24;
+	-moz-border-radius: 15px;
+	-webkit-border-radius:15px;
+	border-radius: 15px;
+	width: 300px;
+	height: 15px;
+	display:block;
+	margin-top: 5px;
+	padding: 5px 5px 5px 15px;
+	position:relative;
+}
+
+#email {
+	background-color: #f89b24;
+	-moz-border-radius: 15px;
+	-webkit-border-radius:15px;
+	border-radius: 15px;
+	width: 300px;
+	height: 15px;
+	display:block;
+	padding: 5px 5px 5px 15px;
+	margin: 10px 0 5px 0;
+	position:relative;
+}
+
+#submit {
+	background-color: #2d3092;
+	-moz-border-radius: 15px;
+	-webkit-border-radius:15px;
+	border-radius: 15px;
+	padding:5px;
+	width:70px;
+	font-size:14px;
+	color:#f89b24;
+	position:relative;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* FOOTER */
+/*-------------------------------------------------------------------------------------------*/
+
+#footer {
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#2d3092', endColorstr='#000000');
+}

@@ -1,18 +1,253 @@
-<html>
-  <head>
-    <title>Hello</title>
-    <style>
-      body {
-        text-align: center;
-        color: yellow;
-        background-color: black;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html 
+xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"
+xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="language" content="pt-BR" />
+	<meta name="author" content="Embarqaudio Soluções Digitais" />
+	<meta name="description" content="Soluções para processamento digital de áudio em sistemas embarcados (DSP). Hardware e software OEM customizados." />
+	<meta name="keywords" content="Embarqaudio,solução,áudio,digital,DSP,processamento,placa,módulo,OEM,embarcado,sistema,pronta,configurada,customizado,fornecedor,fabricante,nacional,hardware,software,embedded,systems,custom" />
+
+	<meta property="og:url" content="http://embarqaudio.com" />
+	<meta property="og:site_name" content="Embarqaudio Soluções Digitais" />
+	<meta property="og:title" content="Embarqaudio Soluções Digitais" />
+	<meta property="og:image" content="http://embarqaudio.com.br/images/logo.png" />
+	<meta property="og:description" content="Bem-vindo à Embarqaudio. Conheça nossa soluções para processamento digital de áudio." />
+	<meta property="og:type" content="website" />
+
+	<title>Embarqaudio Soluções Digitais</title>
+	<link rel="stylesheet" href="css/mainstyle.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+
+	<!-- For iPad -->
+  <meta name="viewport" content="width=1000" />
+    
+  <!--[if IE]>
+	  <link rel="stylesheet" type="text/css" href="css/iestyle.css" />
+	<![endif]--> 
+    
+   	<!-- Scripts -->
+    <script type="text/JavaScript" src="js/curvycorners.js"></script>
+  	<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    
+        $('a.panel').click(function () {
+    
+            $('a.panel').removeClass('selected');
+            $(this).addClass('selected');
+            
+            current = $(this);
+            
+            $('.mainct').scrollTo($(this).attr('href'), 600);		
+            
+            return false;
+        });
+    
+        $(window).resize(function () {
+            resizePanel();
+        });
+        
+    });
+    
+    function resizePanel() {
+    
+        width = $(window).width();
+        height = $(window).height();
+    
+        mask_width = width * $('.item').length;
+            
+        $('#debug').html(width  + ' ' + height + ' ' + mask_width);
+            
+        $('.mainct, .item').css({width: width, height: height});
+        $('#mask').css({width: mask_width, height: height});
+        $('.mainct').scrollTo($('a.selected').attr('href'), 0);
+            
+    }
+    
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31702918-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div id="wrapper"><!-- Begin Wrapper -->
+  <img id="bg" src="images/placaBG.png" alt="background image" />
+  <div id="container"><!-- Begin Container -->
+    <div id="header"><!-- Begin Header -->
+      <div id="navHeader" class="mainct"><!-- Begin navHeader -->
+        <h1><a href="#home" class="panel" title="HOME">Embarqaudio</a></h1>
+        <div id="line"></div>
+        <ul id="nav">
+          <li><a href="#empresa" class="panel">EMPRESA</a></li>
+          <li><a href="#tecnologia" class="panel">TECNOLOGIA</a></li>
+          <li><a href="#produtos" class="panel">PRODUTOS</a></li>
+          <li><a href="#contato" class="panel">CONTATO</a></li>
+        </ul>
+      </div><!-- End navHeader -->
+    </div><!-- End header -->
+    <div id="main"><!-- Begin Main -->
+      <div id="mainbox"><!-- Begin mainBox -->
+        <div id="simbolo"></div>
+            
+<!-- BEGIN SCROLL CONTENT -->
+
+        <div class="mainct"><!-- Begin Main CT -->
+            <div id="mask"><!-- Begin Mask -->
+                <div id="home" class="item">
+                  <a name="home"></a>
+                  <div class="content">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <p>Bem-vindo ao site da Embarqaudio Soluções Digitais, empresa inovadora do
+                    segmento de áudio.</p>
+                    <br />
+                    <p>Aqui você encontrará informações para incorporar processamento digital
+                    de áudio ao seu produto.</p>
+                  </div>
+                </div>
+                <div id="empresa" class="item">
+                  <a name="empresa"></a>
+                  <div class="content">
+                    <h2>EMPRESA</h2>
+                    <p>A Embarqaudio é uma empresa brasileira especializada em processamento digital
+                    de áudio embarcado. Trabalha com plataforma tecnológica própria, desenvolvendo
+                    desde os circuitos eletrônicos até os algoritmos de processamento de sinais.
+                    Entrega a seus clientes soluções completas, fornecendo a placa de circuito integrado
+                    já configurada conforme as necessidades de cada um de seus produtos.</p>
+
+                    <p>As soluções da Embarqaudio são desenvolvidas para serem facilmente incorporadas
+                    à linha de montagem dos clientes. A substituição de diversos componentes por uma
+                    solução integrada descomplica o controle de estoque. Além disso, como as placas são
+                    montadas por processo SMD totalmente automatizado com certificação ISO 9001:2008, o
+                    controle de qualidade se torna mais simples.</p>
+
+                    <p>Agora os fabricantes têm a oportunidade de tornar seus produtos superiores e
+                    mais competitivos incorporando as soluções da Embarqaudio.</p>
+
+                    <p>Entre em <a href="#contato">contato</a> conosco e descubra até onde seu produto
+                    pode chegar.</p>
+                  </div>
+                </div>
+                
+                <div id="tecnologia" class="item">
+                <a name="tecnologia"></a>
+                <div class="content">
+                  <h2>TECNOLOGIA</h2>
+                  <p>Maior qualidade sonora &ndash; A divisão de frequências ativa permite amplificar
+                  graves e agudos separadamente, reduzindo a distorção por intermodulação e aumentando
+                  o controle dos amplificadores sobre os falantes. Ajustes de atraso individuais
+                  garantem a coerência de fase. Adicionalmente, desvios na resposta de freqüência são
+                  compensados com equalização paramétrica.</p>
+
+                  <p>Maior eficiência energética &ndash; Divisão ativa e bi-amplificação aumentam a
+                  eficiência do sistema, extraindo mais decibéis de pressão sonora por watt consumido.</p>
+
+                  <p>Melhor aproveitamento da potência &ndash; Cada canal possui compressores e
+                  limitadores que asseguram a integridade do sinal e, em conjunto com o filtro
+                  subsônico, protegem amplificadores, falantes e ouvidos.</p>
+
+                  <p>Maior flexibilidade de configuração &ndash; Os parâmetros são ajustáveis com
+                  alterações no software. Além disso, é possível controlar parâmetros, como equalização,
+                  usando potenciômetros convencionais.</p>
+
+                  <p>Maior competitividade &ndash; Inove e diferencie seus produtos com as soluções
+                  de excelente performance e custo-benefício oferecidas pela Embarqaudio.</p>
+              </div>
+            </div>
+            <div id="produtos" class="item">
+              <a name="produtos"></a>
+              <div class="content">
+                <h2>PRODUTOS</h2>
+                <p>A placa de processamento XL1 é um produto versátil. Possuindo 2 canais de
+                entrada e 2 canais de saída, tem aplicação em caixas ativas, amplificadores,
+                módulos de processamento, mesas de som, entre outras.</p>
+
+                <p>Com conversores de 24 bits, a placa XL1 oferece resolução suficiente para
+                tornar transparente a conversão entre os universos analógico e digital. A fim
+                de garantir que os algoritmos de processamento de sinais tenham elevado grau de
+                precisão, o processador da placa opera com aritmética de 48 bits. Assim, a
+                pureza sonora é garantida em todas as etapas do processo.</p>
+
+                <p>Na aplicação em caixas ativas, a placa XL1 apresenta para cada canal de
+                entrada controles de volume e equalização independentes.  A seguir, realiza a
+                divisão de freqüência utilizando um crossover Linkwitz-Riley de quarta ordem.
+                Por fim, garante a integridade do sinal com limitadores preditivos para cada um
+                dos canais de saída, protegendo amplificador, falantes e ouvidos.</p>
+
+                <p>Baixe o <a href="pdf/folheto_xl1.pdf">folheto</a> do produto.</p>
+              </div>
+            </div>
+            <div id="contato" class="item">
+              <a name="contato"></a>
+              <div class="content">
+                <h2>CONTATO</h2>
+                <div id="contactform">
+                  <div id="infocontato">
+                    Rua Araguari, 817, conj. 107 - Moema<br/>
+                    CEP 04514-041 - São Paulo/SP<br/>
+                    <!-- Tel: +55 (11) 96519-1299<br/> -->
+                    <a href="mailto:contato@embarqaudio.com">contato@embarqaudio.com</a>
+                    <br />
+                    <br />
+                    <br />
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div id="fotoplaca"><img src="images/placa.png" class="image" alt="foto da placa" /></div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>Embarqaudio<br />
+                   Tecnologia que se ouve</p>
+                <br />
+                <br />
+                <p>Entre em contato conosco e descubra até onde seu produto pode chegar.</p>
+              </div>
+            </div>
+          </div><!-- End Mask -->
+        </div><!-- End Main CT -->
+      </div><!-- End mainBox -->
+
+<!-- END SCROLL CONTENT -->
+
+      <div id="socialnet">
+        <ul id="icon">
+          <li><a href="http://facebook.com/Embarqaudio"><img src="images/facebook.png" alt="ícone do Facebook" /></a></li>
+          <li><a href="http://twitter.com/embarqaudio"><img src="images/twitter.png" alt="ícone do Twitter" /></a></li>
+          <li><a href="https://plus.google.com/116143952052500494299/"><img src="images/google.png" alt="ícone do Google+"/></a></li>
+        </ul>
+      </div>
+    </div><!-- End Main -->
+    
+    <div id="footer"><!-- Begin Footer -->
+	    <div id="ftcontato">
+        Rua Araguari, 817, conj. 107 - Moema - CEP 04514-041 - São Paulo/SP <!-- | Tel: +55 (11) 96519-1299 --> | <a href="mailto:contato@embarqaudio.com">contato@embarqaudio.com</a>
+      </div>
+      <div id="copyright">
+        © 2014 Embarqaudio Ltda.
+      </div>
+    </div><!-- End Footer -->    
+  </div><!-- End Container -->
+</div><!-- End Wrapper -->
+</body>
 </html>
-
-
-
